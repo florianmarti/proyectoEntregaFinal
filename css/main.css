@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* NUMERACION DE PASOS */
+
+#nro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    z-index: 100;
+    color: black;
+    font-size: 30px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 5px;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+#nro1.show {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    z-index: 100;
+    visibility: visible;
+    color: black;
+    font-size: 30px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+#nro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    top: 400px;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 5px;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+#nro2.show {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    top: 400px;
+    z-index: 100;
+    visibility: visible;
+    color: black;
+    font-size: 30px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+#nro3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 600px;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 5px;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+#nro3.show {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 5px;
+    top: 600px;
+    z-index: 100;
+    visibility: visible;
+    color: black;
+    font-size: 30px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+#nro4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 5px;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .6s ease-in-out;
+}
+
+#nro4.show {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+    z-index: 100;
+    visibility: visible;
+    color: black;
+    font-size: 30px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    transition: all .6s ease-in-out;
+}
+.nroCenter{
+    transform: scale(50);
+    opacity: 0;
+}
+
+
+/* CSS PAGINA */
+.feedback-notification {
+    display: none;
+}
+
+#footer {
+    min-height: 100px;
+}
+
+.showItem {
+    visibility: visible;
+    /*display: block;*/
+}
+.displayOff{
+    display: none;
+}
+.hideItem {
+    visibility: hidden;
+    /*display: none;*/
+}
+
+.generic-form {
+    margin: 15px;
+    padding: 5px;
+}
+
+#div-form {
+    height: 80vh;
+}
+
+#divGlobalListado {
+    min-height: 100px;
+}
+
+#div-Listado {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-height: 30vh;
+    border-radius: 8px;
+    -webkit-box-shadow: 2px 0px 14px 5px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 2px 0px 14px 5px rgba(0, 0, 0, 0.43);
+    box-shadow: 2px 0px 14px 5px rgba(0, 0, 0, 0.43);
+}
+
+.errorField {
+    border-color: red;
+    border-width: 1px;
+}
+
+.correctField {
+    border-color: green;
+    border-width: 1px;
+}
+.balance-description,
+.balance-type {
+    color: green;
+    font-weight: bold;
+}
+.budget-description,
+.budget-type {
+    color: green;
+    font-weight: bold;
+}
+
+.expense-description,
+.expense-type {
+    color: red;
+    font-weight: bold;
+}
+ 
+
+/* ///// LISTADO CLASES //// */
+
+.title-list-item {
+    text-align: center;
+    font-weight: bold;
+}
+.balance {
+    text-align: center;
+    /*background-color: rgba(255, 0, 0, 0.384);
+    color: white;*/
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.expense {
+    text-align: center;
+    /*background-color: rgba(255, 0, 0, 0.384);
+    color: white;*/
+    border-radius: 8px;
+    border: 2px solid white;
+}
+.balanceAmount {
+    font-size: larger;
+    color: rgb(38, 161, 10);
+}
+.expenseAmount {
+    font-size: larger;
+    color: red;
+}
+.balance:hover,
+.expense:hover,
+.budget:hover {
+    font-weight: bold;
+}
+
+.budget {
+    text-align: center;
+    /*background-color: green;
+    color: white;*/
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.budgetAmount {
+    font-size: larger;
+    color: blue;
+}
+
+.list-space {
+    background-color: black;
+    height: 3px;
+    min-height: 3px;
+}
+
+.arrowUpIcon {
+    color: black;
+}
+
+.iconoError {
+    color: red;
+}
+
+/* ///////  COLORES ///////// */
+.showGreen {
+    color: green;
+}
+
+.showRed {
+    color: red;
+}
+
+.showBlack {
+    color: rgb(102, 68, 182);
+}
+
+.btnLoadJson {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.btnSaveJson {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+ 
+.btn-outline-warning {
+    
+    color: #ffffff;
+    background-color: #2ccb0d;
+    border-color: #001101;
+}
+
+.div-btnJSON {
+    margin: 10px;
+}
+
+.budget-icon,
+.balance-icon,
+.expense-icon {
+    font-size: 70px;
+
+}
+
+#form-submit {
+    display: none;
+}
+
+.selectedBalance {
+    box-shadow: 0px 0px 17px 0px #05c50e;
+    background: #05c50e;
+    color: #ffffff;
+}
+.selectedBudget {
+    box-shadow: 0px 0px 17px 0px #1266F1;
+    background: #1266F1;
+    color: #ffffff;
+}
+ 
+
+
+.selectedExpense {
+    box-shadow: 0px 0px 17px 0px #F93154;
+    background: #f93154;
+    color: white;
+}
+
+/*  APP */
+#budget,
+#balance,
+#expense {
+    font-size: 40px;
+}
+
+#div-appInfo {
+    padding: 5px;
+}
+
+#divApp-budget {
+    border-radius: 200px;
+}
+
+#divApp-balance {
+    border-radius: 200px;
+}
+
+#divApp-expense {
+    border-radius: 200px;
+}
+
+/*/ button back to top */
+button.btnBackTop {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    border: none;
+    right: 50px;
+    bottom: 75px;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .3s ease-in-out;
+}
+
+button.btnBackTop.show {
+    display: block;
+    background: #fff;
+    font-size: 30px;
+    right: 25px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+/*login */
+  
+        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+        [class*="fontawesome-"]:before {
+          font-family: 'FontAwesome', sans-serif;
+        }
+
+        body {
+          background: rgb(133, 138, 192);
+          color: white;
+          font: 87.5%/1.5em 'Open Sans', sans-serif;
+          margin: 0;
+        }
+
+        p {
+          line-height: 1.5em;
+        }
+
+        after { clear: both; }
+
+        .login {
+          margin: 50px auto;
+          width: 320px;
+        }
+
+        .login form {
+          margin: auto;
+          padding: 22px 22px 22px 22px;
+          width: 100%;
+          border-radius: 5px;
+          background: #545258;
+          border-top: 3px solid #434a52;
+          border-bottom: 3px solid #434a52;
+        }
+
+        .login form span {
+          background-color: #363b41;
+          border-radius: 3px 0px 0px 3px;
+          border-right: 3px solid #434a52;
+          color: #606468;
+          display: block;
+          float: left;
+          line-height: 50px;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+        }
+
+        .login form input[type="email"] {
+          background-color: #a59e8a;
+          border-radius: 0px 3px 3px 0px;
+          color: #0a0909;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 50px;
+        }
+
+        .login form input[type="password"] {
+          background-color: #a59e8a;
+          border-radius: 0px 3px 3px 0px;
+          color: #0a0909;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 50px;
+        }
+
+        .login form input[type="button"] {
+          background: #b5cd60;
+          border: 0;
+          width: 100%;
+          height: 40px;
+          border-radius: 3px;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s ease-in-out;
+        }
+        #login form input[type="button"]:hover {
+          background: #16aa56;
+        }
+/*Registro*/
+
+.rgstr {
+    margin: 50px auto;
+    width: 320px;
+  }
+
+  .rgstr form {
+    margin: auto;
+    padding: 22px 22px 22px 22px;
+    width: 100%;
+    border-radius: 5px;
+    background: #545258;
+    border-top: 3px solid #434a52;
+    border-bottom: 3px solid #434a52;
+  }
+
+  .rgstr form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    border-right: 3px solid #434a52;
+    color: #606468;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .rgstr form input[type="email"] {
+    background-color: #a59e8a;
+    border-radius: 0px 3px 3px 0px;
+    color: #0a0909;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 90%;
+    height: 50px;
+  }
+  .rgstr form input[type="text"] {
+    background-color: #a59e8a;
+    border-radius: 0px 3px 3px 0px;
+    color: #0a0909;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 90%;
+    height: 50px;
+  }
+  .rgstr form input[type="password"] {
+    background-color: #a59e8a;
+    border-radius: 0px 3px 3px 0px;
+    color: #0a0909;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 90%;
+    height: 50px;
+  }
+
+  .rgstr form input[type="submit"] {
+    background: #f37507;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  #rgstr form input[type="submit"]:hover {
+    background: #16aa56;
+  }

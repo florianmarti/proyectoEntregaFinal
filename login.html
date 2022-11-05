@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+     
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="rgstr">
+        <form name='form-login'>
+    
+            <h1>REGISTERARSE</h1>
+            
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Nombre" required>
+
+            <label for="mail">Correo</label>
+            <input type="email" id="mail" placeholder="Correo" required>
+    
+            <label for="pw">Contraseña</label>
+            <input type="password" id="pw"placeholder="Password" required>
+
+            <label for="pw">Contraseña</label>
+            <input type="password" id="rePw"placeholder="Repetir Password" required>
+    
+            <ul class="helper-text">
+                <li class="length">Maximo 12 caracteres</li>
+                <li class="lowercase">Al menos una letra minuscula.</li>
+                <li class="uppercase">Al menos una letra Mayuscula.</li>
+                <li class="special">Debe contener un número o carácter especial.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" >
+    
+        </form>
+    </div>
+    
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1>INGRESAR</h1>
+    
+            <label for="userName">Correo</label>
+            <input type="email" id="userName" placeholder="Correo" required>
+    
+            <label for="userPw">Contraseña</label>
+            <input type="password" id= "userPw" placeholder="Password" required>
+    
+            <div id="remember">
+                <p>No tenes cuenta?</p>
+                <button  type="button" class="btn btn-success" >Registrarme</button>            </div>
+    <br>
+            <input id="login_btn" type="button" value="Login">
+    
+        </form>
+    </div>
+      
+    <script src="./js/login.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script src ="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script > 
+</body>
+</html>

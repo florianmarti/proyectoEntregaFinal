@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Control de Balance</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Logos Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="bg-dark">
+    <header class="displayOff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-11">
+                    <h2 class="text-uppercase text-md-center">Sistema de Balance</h2>
+                    <h3 id="textWelcome" class="text-uppercase text-md-center"></h3>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+          <div class="container-fluid text-md-center">
+           El conversor de moneda al dia</p>
+            <div class="moneda">
+                <select id="moneda-uno">
+                    <option value="AED">AED</option>
+                    <option value="ARS">ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD" selected>USD</option>
+                    <option value="UYU">UYU</option>
+                    <option value="VND">VND</option>
+                    <option value="ZAR">ZAR</option>
+    
+                </select>
+    
+                <input type="number" id="cantidad-uno"placeholder="0" value="1"> 
+            </div>
+    
+            <div class="taza-cambio-container">
+                <button type="button" class="btn btn-warning" id="taza">
+                    Convertir
+                </button>
+    
+                <div class="cambio" id="cambio"></div>
+    
+            </div>
+    
+            <div class="moneda">
+                <select id="moneda-dos">
+                    <option value="AED">AED</option>
+                    <option value="ARS" selected>ARS</option>
+                    <option value="AUD">AUD</option>
+                    <option value="BGN">BGN</option>
+                    <option value="BRL">BRL</option>
+                    <option value="BSD">BSD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CLP">CLP</option>
+                    <option value="CNY">CNY</option>
+                    <option value="COP">COP</option>
+                    <option value="CZK">CZK</option>
+                    <option value="DKK">DKK</option>
+                    <option value="DOP">DOP</option>
+                    <option value="EGP">EGP</option>
+                    <option value="EUR">EUR</option>
+                    <option value="FJD">FJD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="GTQ">GTQ</option>
+                    <option value="HKD">HKD</option>
+                    <option value="HRK">HRK</option>
+                    <option value="HUF">HUF</option>
+                    <option value="IDR">IDR</option>
+                    <option value="ILS">ILS</option>
+                    <option value="INR">INR</option>
+                    <option value="ISK">ISK</option>
+                    <option value="JPY">JPY</option>
+                    <option value="KRW">KRW</option>
+                    <option value="KZT">KZT</option>
+                    <option value="MXN">MXN</option>
+                    <option value="MYR">MYR</option>
+                    <option value="NOK">NOK</option>
+                    <option value="NZD">NZD</option>
+                    <option value="PAB">PAB</option>
+                    <option value="PEN">PEN</option>
+                    <option value="PHP">PHP</option>
+                    <option value="PKR">PKR</option>
+                    <option value="PLN">PLN</option>
+                    <option value="PYG">PYG</option>
+                    <option value="RON">RON</option>
+                    <option value="RUB">RUB</option>
+                    <option value="SAR">SAR</option>
+                    <option value="SEK">SEK</option>
+                    <option value="SGD">SGD</option>
+                    <option value="THB">THB</option>
+                    <option value="TRY">TRY</option>
+                    <option value="TWD">TWD</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="UYU">UYU</option>
+                    <option value="VND">VND</option>
+                    <option value="ZAR">ZAR</option>
+    
+                </select>
+    
+                <input type="number" id="cantidad-dos" placeholder="0"> 
+            </div>
+        </div>
+        <br>
+    </header>
+    <main>
+        <div class="" id="pasosIntro">
+            <div class="btn-light" id="nro1">1</div>
+            <div class="btn-light" id="nro2">2</div>
+            <div class="btn-light" id="nro3">3</div>
+            <div class="btn-light" id="nro4">4</div>
+            
+        </div>
+        <div class="container-fluid" id="div-form">
+            <div class="row justify-content-center">
+                
+                <!-- FORMULARIO DE CARGA -->
+                <div class="w-100"></div> <!-- Genero un salto de fila -->
+                <div class="col-md-5">
+                    <div class="select-form container-fluid ">
+                        <div class="row" id="typeSelection">
+                            <div class="col-md-6">
+                                <button id="selectBudget"
+                                class="btn btn-outline-primary btn-block expense-submit displayOff">Ingreso</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button id="selectExpense"
+                                    class="btn btn-outline-danger btn-block expense-submit displayOff">Egreso</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="w-100"></div> <!-- Genero un salto de fila -->
+                <div class="col-md-9">
+                    <!-- Formulario Generico -->
+                    <form id="generic-form" class="generic-form displayOff">
+                        <div class="form-group row  hideItem" id="generic-form1">
+                            <label for="generic-date" class="col-sm-2 text-light">Fecha:</label>
+                            <div class="col-sm-9">
+                                <input type="date" id="generic-date" class="form-control generic-input">
+                                <small id="small-date" class="form-text text-muted">
+                                    Ingresar fecha del evento
+                                </small>
+                            </div>
+                            <span class="col-sm-1 iconoError hideItem">
+                                <ion-icon name="close-circle" size="large"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="form-group row hideItem" id="generic-form2">
+                            <label for="generic-account" class="col-sm-2 text-light">Cuenta:</label>
+                            <div class="col-sm-9">
+                                <select id="generic-account" class="form-control">
+                                    <option value=""></option>
+                                    <option>Efectivo</option>
+                                    <option>Tarjeta Credito</option>
+                                    <option>Cuenta</option>
+                                </select>
+                                <small id="small-account" class="form-text text-muted">
+                                    Seleccionar Cuenta
+                                </small>
+                            </div>
+                            <span class="col-sm-1 iconoError hideItem">
+                                <ion-icon name="close-circle" size="large"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="form-group row hideItem" id="generic-form3">
+                            <label for="generic-category" class="col-sm-2 text-light">Categoria:</label>
+                            <div class="col-sm-9">
+                                <select id="generic-category" class="form-control">
+                                    <option value=""></option>
+                                    <option>Venta</option>
+                                    <option>Comida</option>
+                                    <option>Salario</option>
+                                </select>
+                                <small id="small-category" class="form-text text-muted">
+                                    Seleccionar Categoria
+                                </small>
+                            </div>
+                            <span class="col-sm-1 iconoError hideItem">
+                                <ion-icon name="close-circle" size="large"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="form-group row hideItem" id="generic-form4" >
+                            <label for="generic-amount" class="col-sm-2 text-light">Monto:</label>
+                            <div class="col-sm-9">
+                                <input type="number" id="number-input" class="form-control generic-input">
+                                <small id="small-amount" class="form-text text-muted">
+                                    Ingresar Monto (caracteres numericos)
+                                </small>
+                            </div>
+                            <span class="col-sm-1 iconoError hideItem">
+                                <ion-icon name="close-circle" size="large"></ion-icon>
+                            </span>
+                        </div>
+
+                        <div class="form-group row hideItem" id="generic-form5">
+                            <label for="generic-title" class="col-sm-2 text-light">Descripcion:</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="text-input" class="form-control generic-input">
+                                <small id="small-description" class="form-text text-muted">
+                                    Ingresar Descripcion del evento con longitud entre 5-12 caracteres
+                                </small>
+                            </div>
+                            <span class="col-sm-1 iconoError hideItem">
+                                <ion-icon name="close-circle" size="large"></ion-icon>
+                            </span>
+                        </div>
+
+
+                        <!-- Submit Income Form -->
+                        <div class="form-group row justify-content-center">
+                            <button type="submit" id="form-submit"
+                                class="btn  btn-outline-dark form-submit col-sm-6">Grabar</button>
+                            <!-- Feedback -->
+                            <small class="feedback-notification text-capitalize col-sm-7 form-text text-muted"
+                                id="feedback-notification">Comentarios</small>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="w-100"></div> <!-- Genero un salto de fila -->
+            </div>
+            <!-- APP INFO -->
+            <div id="div-appInfo">
+                <div class="row justify-content-center">
+                    <div class="col-4 text-center btn-outline-primary displayOff" id="divApp-budget">
+                        <h3 class="text-uppercase ">Total Ingresos</h3>
+                        <span class="material-symbols-outlined">trending_up</span>
+                        <h3 class="text-uppercase budget-amount" id="budget"><span>+ $ <span
+                                    id="budget-amount">0</span></span></h3>
+                    </div>
+                    <div class="col-4 text-center btn-outline-light displayOff" 
+                    id="divApp-balance">
+                        <h3 class="text-uppercase">Balance</h3>
+                        <span class="material-symbols-outlined">monetization_on</span>
+                        <h3 class="text-uppercase balance-amount" id="balance"><span>$ </span><span
+                                id="balance-amount">0</span></h3>
+                    </div>
+                    <div class="col-4 text-center btn-outline-danger displayOff" id="divApp-expense">
+                        <h3 class="text-uppercase">Total Gastos</h3>
+                        <span class="material-symbols-outlined">trending_down</span>
+                        <h3 class="text-uppercase expense-amount" id="expense"><span>- $ <span
+                                    id="expense-amount">0</span></span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center"></div>
+            <!-- LISTADO -->
+            <div class="container-fluid" id="divGlobalListado">
+                <!-- Listado Gastos -->
+                <div class="div-Listado"> 
+                    <button id="btnListado" class="btn btn-outline-success btn-block expense-submit displayOff">Listar</button>
+                </div>
+                <div id="div-Listado" class="displayOff justify-content-center bg">
+                    <div class="div-btnJSON">
+                        <div class="row">
+                            <h4 class="text-uppercase">Listado</h4>
+                            <button id="btnLoadJson" class="btnLoadJson btn btn-outline-dark">Cargar Datos</button>
+                            <button id="btnSaveJson" class="btnSaveJson btn btn-outline-dark" disabled>Guardar Datos</button>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center text-capitalize">
+                        <div class="col-2 title-list-item text-uppercase">Fecha</div>
+                        <div class="col-2 title-list-item text-uppercase">Descripcion</div>
+                        <div class="col-2 title-list-item text-uppercase">Monto</div>
+                        <div class="col-2 title-list-item text-uppercase">Tipo</div>
+                        <div class="col-2 title-list-item text-uppercase">Categoria</div>
+                        <div class="col-2 title-list-item text-uppercase ">Accion</div>
+                    </div>
+                    <div class="total-list container-fluid" id="total-list">
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-fluid btn-light displayOff" id="footer">
+                <div class="row justify-content-center">
+                    <div>Diseño Florian Marti</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BTN to TOP -->
+        <button class="btnBackTop" type="button">
+            <ion-icon name="arrow-up" class="arrowUpIcon"></ion-icon>
+        </button>
+    </main>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     
+    <script src="./js/login.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
